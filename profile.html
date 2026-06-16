@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left" id="left">
+            <div class="title">
+                <h1>E-REGISTRY</h1>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li ><a href="userdashboard.html"><i class="fa-solid fa-sliders"></i>Dashboard</a></li>
+                    <li><a  href="mydepartmentfiles.html"><i class="fa-regular fa-folder-open"></i>Department Files</a></li>
+                    <li><a  href="mydepartmentmails.html"><i class="fa-solid fa-envelope"></i>Department Mails</a></li>
+                    <li><a  href="pendingaction.html"><i class="fa-solid fa-hourglass-half"></i>Pending Action</a></li>
+                    <li><a class="active" href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="cancel" id="cancel">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="navbar">
+                <nav class="navcontent">
+                    <div class="name">
+                        <h1>Profile</h1>
+                    </div>
+
+                    <div class="userinfodd">
+                        <div class="notification">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+
+                        <div class="userinfo">
+                            <img src="./dp.jpeg" alt="#">
+                            <div class="username">
+                                <p>Ajanoku ICT</p>
+                                <p>Officer</p>
+                            </div>
+                            <div class="dropdownicon">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="bars" id="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="profilecontent">
+                <div class="profilename">
+                    <h2>My Profile</h2>
+                </div>
+
+                <div class="userprofileinfo">
+                    <div class="imgchange">
+                        <form action="#">
+                            <img src="./userimg.png" alt="#" id="profileImg">
+                            <input type="file" id="imgUpload">
+                            <button type="submit">Save</button>
+                        </form>
+                    </div>
+
+                    <div class="basicinfo">
+                        <div class="pip1">
+                            <p>Full Name:</p>
+                            <p>Ajanaku Ogunmola</p>
+                        </div>
+                        
+                        <div class="pip1">
+                            <p>Email:</p>
+                            <p>ajanaku.ogunmola@fcda.gov.ng</p>
+                        </div>
+
+                        <div class="pip1">
+                            <p>Scada:</p>
+                            <p>something</p>
+                        </div>
+
+                        <div class="pip1">
+                            <p>Department:</p>
+                            <p>ICT</p>
+                        </div>
+
+                        <div class="pip1">
+                            <p>Phone Number:</p>
+                            <p>09087654354</p>
+                        </div>
+
+                        <div class="pip1">
+                            <p>Date Joined:</p>
+                            <p>23/08/2005</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="changepassword">
+                    <div class="profilename">
+                        <h2>Change Password</h2>
+                    </div>
+
+                    <form action="#" class="passwordform">
+                        <div class="passwordchange">
+                            <div class="pip2">
+                                <label for="Currentpassword">Current Password</label>
+                                <input type="password">
+                            </div>
+                                
+                            <div class="pip2">
+                                <label for="Newpassword">New Password</label>
+                                <input type="password">
+                            </div>
+
+                            <div class="pip2">
+                                <label for="Confirmpassword">Confirm Password</label>
+                                <input type="password">
+                            </div>      
+                        </div>
+                        <div class="submitbutton">
+                            <button type="submit">Update Password</button>
+                        </div>
+                        
+                    </form>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mydepartmentmails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Department Mails</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left" id="left">
+            <div class="title">
+                <h1>E-REGISTRY</h1>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li ><a href="userdashboard.html"><i class="fa-solid fa-sliders"></i>Dashboard</a></li>
+                    <li><a  href="mydepartmentfiles.html"><i class="fa-regular fa-folder-open"></i>Department Files</a></li>
+                    <li><a class="active" href="mydepartmentmails.html"><i class="fa-solid fa-envelope"></i>Department Mails</a></li>
+                    <li><a href="pendingaction.html"><i class="fa-solid fa-hourglass-half"></i>Pending Action</a></li>
+                    <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="cancel" id="cancel">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="navbar">
+                <nav class="navcontent">
+                    <div class="name">
+                        <h1>My Department Mails</h1>
+                    </div>
+
+                    <div class="userinfodd">
+                        <div class="notification">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+
+                        <div class="userinfo">
+                            <img src="./dp.jpeg" alt="#">
+                            <div class="username">
+                                <p>Ajanoku ICT</p>
+                                <p>Officer</p>
+                            </div>
+                            <div class="dropdownicon">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="bars" id="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="search">
+                <input type="text" name="#" id="searchbar" class="searchbar" placeholder="Search by Subject, Sender or Ref No...">
+                <select name="statusdd" id="statusdd" class="statusdd">
+                    <option value="#">All Status</option>
+                    <option value="1">Pending</option>
+                    <option value="2">Received</option>
+                </select>
+                <select name="typedd" id="typedd" class="typedd">
+                    <option value="#">All Types</option>
+                    <option value="1">Incoming</option>
+                    <option value="2">Outgoing</option>
+                </select>
+                <button class="addfile">Register Mail</button>
+            </div>
+
+            <div class="departmentmails">
+                <table>
+                    <thead>
+                        <!-- <tr>
+                            <td>My Pending Action</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#">View All</a></td>
+                        </tr> -->
+                        <tr>
+                            <td>Ref No</td>
+                            <td>Subject</td>
+                            <td>From</td>
+                            <td>Type</td>
+                            <td>Status</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
+                            <td>Legal</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
+                        </tr>
+                        <tr>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
+                            <td>Legal</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
+                        </tr>
+                        <tr>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
+                            <td>Legal</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
+                        </tr>
+                        <tr>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
+                            <td>Legal</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
+                        </tr>
+                        <tr>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
+                            <td>Legal</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+                <div class="entries">
+                    <p>Showing 1 to 5 of 190 entries</p>
+                    <div class="tableno">
+                        <span class="no  active">1</span>
+                        <span class="no">2</span>
+                        <button class="Next">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
