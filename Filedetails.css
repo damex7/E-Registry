@@ -20,6 +20,7 @@
     align-items: center;
     padding: 10px;
     position: relative;
+    font-size: 14px;
 }
 
 .right{
@@ -45,6 +46,7 @@
     /* background-color: red; */
     align-items: center;
     gap: 10px;
+    font-size: 14px;
 }
 
 .userinfo{
@@ -96,61 +98,86 @@
     color: #f2d4a2;
 }
 
-.search{
+.contentinfo1{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    gap: 9px;
+    align-items: center;
+    gap: 20px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color: yellow; */
 }
 
-input,.searchbar{
+.contentinfo2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-right: 1px solid #ddd;
     padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid rgb(214, 214, 214);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color: red; */
+    width: 30%;
+}
+
+.contentinfo3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color: blue; */
+    width: 30%;
+}
+
+.contentinfo1 i{
+    font-size: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(195, 227, 195);
+}
+
+.contentinfostuff{
+    display: flex;
+    flex-direction: column;
+}
+
+.filecontent{
+    justify-content: space-between;
+    /* padding: 20px; */
+    border: 1px solid #ddd;
+    display: flex;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    flex-wrap: wrapZZ;
+    /* width: 100%; */
+    /* background-color: aqua; */
+    font-size: 14px;
 }
 
-.statusdd{
+.contentinfostuff button{
     padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid rgb(214, 214, 214);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-.typedd{
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid rgb(214, 214, 214);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-.addfile{
-    padding: 10px;
-    border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-    color: white;
-    background-color: #75B5F2;
+    background-color: green;
+    border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 
-.addfile:hover{
-    background-color: blue;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-
-}
-
-.topmost{
-    display: flex;
-    justify-content: space-between;
-    background-color: red;
-    /* width: 50%; */
+.contentinfostuff button:hover{
+    background-color: rgb(117, 159, 117);
+    color: white;
 }
 
 .departmentfiles{
@@ -160,6 +187,7 @@ input,.searchbar{
 table{
     width:100%;
     border-collapse:collapse;
+    font-size: 14px;
     /* height: 70vh; */
     /* table-layout:fixed; */
 }
@@ -184,10 +212,65 @@ tbody tr:hover{
     background:#fafafa;
 }
 
+.tabletings{
+    display: flex;
+    border: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 5px;
+}
+
+.tabletings p{
+    display: flex;
+    gap: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tabletings p.active{
+    color: green;
+    border-bottom: 2px solid green;
+
+}
+
+/* .tabletings p.active{
+    color: rgb(76, 147, 80);
+} */
+
+.title0{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.title1{
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.title0 button{
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.title0 button:hover{
+    background-color: rgb(117, 159, 117);
+    color: white;
+}
+
 .entries{
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    border: 1px solid #ddd;
 }
 
 .tableno{
@@ -221,13 +304,6 @@ tbody tr:hover{
 .tableno .active{
     background-color: blue;
     color: white;
-}
-
-.entries{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #ddd;
 }
 
 .Next{
@@ -264,6 +340,13 @@ tbody tr:hover{
 
 .show{
     display: block !important;
+}
+
+.newtable2{
+    display: none;
+}
+.newtable3{
+    display: none;
 }
 
 
