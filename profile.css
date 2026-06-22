@@ -20,10 +20,13 @@
     align-items: center;
     padding: 10px;
     position: relative;
+    font-size: 14px;
 }
 
 .right{
-    padding: 10px;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -43,6 +46,7 @@
     /* background-color: red; */
     align-items: center;
     gap: 10px;
+    font-size: 14px;
 }
 
 .userinfo{
@@ -144,6 +148,7 @@
     border-radius: 5px;
     justify-content: center;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
 }
 
 .changepassword{
@@ -151,6 +156,7 @@
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px;
+    font-size: 14px;
 }
 
 /* .passwordchange{
