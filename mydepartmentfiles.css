@@ -204,6 +204,11 @@ tbody tr:hover{
     border-radius: 5px;
 }
 
+.view a{
+    color: white;
+    text-decoration: none;
+}
+
 .view:hover{
     background-color: blue;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
