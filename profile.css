@@ -232,7 +232,7 @@
     display: block !important;
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 870px){
     .left{
         display: none;
         position: absolute;
