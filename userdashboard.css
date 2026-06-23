@@ -137,6 +137,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 .recentfilestable table{
@@ -151,6 +152,7 @@
 table{
     width:100%;
     border-collapse:collapse;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     /* table-layout:fixed; */
 }
 
@@ -174,8 +176,18 @@ tbody tr:hover{
     background:#fafafa;
 }
 
+td a{
+    color: blue;
+    text-decoration: none;
+}
+
+td a:hover{
+    color: rgb(116, 116, 193);
+}
+
 .recentmails{
     overflow-x: scroll;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .bars{
