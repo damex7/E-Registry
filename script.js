@@ -4,13 +4,16 @@ let cancel = document.getElementById("cancel");
 let cancel1 = document.getElementById("cancel1");
 let newFile = document.getElementById("newFile");
 let addFile = document.getElementById("addFile");
+let cancel2 = document.getElementById("cancel2");
+let newMail = document.getElementById("newMail");
+let addMail = document.getElementById("addMail");
 
 bars.addEventListener('click', ()=>{
     if(!left.classList.contains("show")){
         left.classList.add("show");
-        bars.classList.add(hide);
+        bars.classList.add("hide");
     }
-})
+});
 
 cancel.addEventListener('click', ()=>{
     if(left.classList.contains("show")){
@@ -18,18 +21,21 @@ cancel.addEventListener('click', ()=>{
         // bars.style.display= "block";
         bars.classList.remove("hide");
     }
-})
+});
 
 cancel1.addEventListener('click', ()=>{
-    if(!newFile.classList.contains("hide")){
-        newFile.classList.add("hide");
-    }
-})
+    newFile.classList.add("hide");
+});
 
 addFile.addEventListener('click', ()=>{
     newFile.classList.remove("hide");
     newFile.classList.add("show");
+});
+
+addMail.addEventListener('click', ()=>{
+    alert("bring!!!");
 })
+
 
 // file detail
 let actionsheet = document.getElementById("actionsheet");
