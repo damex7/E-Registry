@@ -5,14 +5,15 @@ let cancel = document.getElementById("cancel");
 bars.addEventListener('click', ()=>{
     if(!left.classList.contains("show")){
         left.classList.add("show");
-        bars.style.display = "none";
+        bars.classList.add(hide);
     }
 })
 
 cancel.addEventListener('click', ()=>{
     if(left.classList.contains("show")){
         left.classList.remove("show");
-        bars.style.display= "block";
+        // bars.style.display= "block";
+        bars.classList.remove("hide");
     }
 })
 
