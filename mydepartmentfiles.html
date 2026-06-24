@@ -61,6 +61,49 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
 
+            <div class="newfile" id="newFile">
+                <form action="#" method="post">
+                    <div class="title10">
+                        <h3>New File</h3>
+                    </div>
+
+                    <div class="cancel1" id="cancel1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+                    <div class="formcontent">
+                        <div class="forminfo">
+                            <label for="Name">Name</label>
+                            <input type="text" name="Name" id="filename">
+                        </div>
+
+                        <div class="forminfo">
+                            <label for="Subject">Subject</label>
+                            <input type="text" name="Subject" id="Subject">
+                        </div>
+
+                        <div class="forminfo">
+                            <label for="FileNo">File No</label>
+                            <input type="text" name="FileNo" id="FileNo">
+                        </div>
+
+                         <div class="forminfo">
+                            <label for="Volume">Volume</label>
+                            <input type="text" name="Volume" id="Volume">
+                        </div>
+
+                        <div class="forminfo">
+                            <label for="Date">Date</label>
+                            <input type="date" name="Date" id="Date">
+                        </div>
+                    </div>
+
+                    <div class="submitbtn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
             <div class="search">
                 <input type="text" name="#" id="searchbar" class="searchbar" placeholder="Search by filing No or Subject...">
                 <select name="statusdd" id="statusdd" class="statusdd">
@@ -74,7 +117,7 @@
                     <option value="1">Incoming</option>
                     <option value="2">Outgoing</option>
                 </select>
-                <button class="addfile">Add File</button>
+                <button class="addfile" id="addFile">Add File</button>
             </div>
 
             <div class="departmentfiles">

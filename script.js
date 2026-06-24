@@ -1,6 +1,9 @@
 let left = document.getElementById("left");
 let bars = document.getElementById("bars");
 let cancel = document.getElementById("cancel");
+let cancel1 = document.getElementById("cancel1");
+let newFile = document.getElementById("newFile");
+let addFile = document.getElementById("addFile");
 
 bars.addEventListener('click', ()=>{
     if(!left.classList.contains("show")){
@@ -15,6 +18,17 @@ cancel.addEventListener('click', ()=>{
         // bars.style.display= "block";
         bars.classList.remove("hide");
     }
+})
+
+cancel1.addEventListener('click', ()=>{
+    if(!newFile.classList.contains("hide")){
+        newFile.classList.add("hide");
+    }
+})
+
+addFile.addEventListener('click', ()=>{
+    newFile.classList.remove("hide");
+    newFile.classList.add("show");
 })
 
 // file detail
