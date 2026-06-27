@@ -358,6 +358,7 @@ tbody tr:hover{
 
 .newtable2{
     display: none;
+    overflow-x: scroll;
 }
 .newtable3{
     display: none;

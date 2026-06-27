@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admindashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left" id="left">
+            <div class="title">
+                <h1>E-REGISTRY</h1>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li ><a class="active" href="index.html"><i class="fa-solid fa-sliders"></i>Dashboard</a></li>
+                    <li><a href="mydepartmentfiles.html"><i class="fa-regular fa-folder-open"></i>Department Files</a></li>
+                    <li><a href="mydepartmentmails.html"><i class="fa-solid fa-envelope"></i>Department Mails</a></li>
+                    <li><a href="pendingaction.html"><i class="fa-solid fa-hourglass-half"></i>Pending Action</a></li>
+                    <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="cancel" id="cancel">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="navbar">
+                <nav class="navcontent">
+                    <div class="name">
+                        <h1>Dashboard</h1>
+                    </div>
+
+                    <div class="userinfodd">
+                        <div class="notification">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+
+                        <div class="userinfo">
+                            <img src="./dp.jpeg" alt="#">
+                            <div class="username">
+                                <p>Ajanoku ICT</p>
+                                <p>Officer</p>
+                            </div>
+                            <div class="dropdownicon">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="bars" id="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="lilboxes">
+                <div class="boxcontent">
+                    <p>Files in Department</p>
+                    <p>120</p>
+                </div>
+
+                <div class="boxcontent">
+                    <p>Pending Actions</p>
+                    <p>35</p>
+                </div>
+
+                <div class="boxcontent">
+                    <p>Mails</p>
+                    <p>60</p>
+                </div>
+
+                <div class="boxcontent">
+                    <p>Files Awaiting Review</p>
+                    <p>25</p>
+                </div>
+            </div>
+
+            <div class="recentfilestable">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Recent files</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="mydepartmentfiles.html">View All</a></td>
+                        </tr>
+                        <tr>
+                            <td>File No</td>
+                            <td>Subject</td>
+                            <td>Status</td>
+                            <td>Date Received</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FCDA/2026/0007</td>
+                            <td>Land Allocation Dispute</td>
+                            <td>Active</td>
+                            <td>20/06/2026</td>
+                        </tr>
+                        <tr>
+                            <td>FCDA/2026/0007</td>
+                            <td>Land Allocation Dispute</td>
+                            <td>Active</td>
+                            <td>20/06/2026</td>
+                        </tr>
+                        <tr>
+                            <td>FCDA/2026/0007</td>
+                            <td>Land Allocation Dispute</td>
+                            <td>Active</td>
+                            <td>20/06/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>My Pending Action</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="pendingaction.html">View All</a></td>
+                        </tr>
+                        <tr>
+                            <td>File No</td>
+                            <td>Subject</td>
+                            <td>Status</td>
+                            <td>Due Date</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FCDA/2026/0007</td>
+                            <td>Land Allocation Dispute</td>
+                            <td>Active</td>
+                            <td>20/06/2026</td>
+                        </tr>
+                        <tr>
+                            <td>FCDA/2026/0007</td>
+                            <td>Land Allocation Dispute</td>
+                            <td>Active</td>
+                            <td>20/06/2026</td>
+                        </tr>
+                        <tr>
+                            <td>FCDA/2026/0007</td>
+                            <td>Land Allocation Dispute</td>
+                            <td>Active</td>
+                            <td>20/06/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="recentmails">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>My Recent Mails</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="mydepartmentmails.html">View All</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ref No</td>
+                            <td>Subject</td>
+                            <td>From</td>
+                            <td>Date Received</td>
+                            <td>Priority</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MAIL/2026/0001</td>
+                            <td>Land Dispute</td>
+                            <td>HR</td>
+                            <td>20/06/2026</td>
+                            <td>High</td>
+                            <td><button class="view">view</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
