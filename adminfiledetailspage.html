@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminfiledetailspage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>File Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left" id="left">
+            <div class="title">
+                <h1>E-REGISTRY</h1>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li ><a href="admindashboard.html"><i class="fa-solid fa-sliders"></i>Dashboard</a></li>
+                    <li><a class="active" href="adminfilespage.html"><i class="fa-regular fa-folder-open"></i>Files</a></li>
+                    <li><a href="adminmailspage.html"><i class="fa-solid fa-envelope"></i> Mails</a></li>
+                    <li><a href="adminUserspage.html"><i class="fa-solid fa-user"></i>Users</a></li>
+                    <li><a href="admindepartmentspage.html"><i class="fa-solid fa-building" style="color: white;"></i>Departments</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="cancel" id="cancel">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="navbar">
+                <nav class="navcontent">
+                    <div class="name">
+                        <h1>File Details</h1>
+                    </div>
+
+                    <div class="userinfodd">
+                        <div class="notification">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+
+                        <div class="userinfo">
+                            <img src="./dp.jpeg" alt="#">
+                            <div class="username">
+                                <p>Ajanoku ICT</p>
+                                <p>Officer</p>
+                            </div>
+                            <div class="dropdownicon">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="bars" id="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="filecontent">
+                <div class="contentinfo1">
+                    <div class="contentinfoicon">
+                        <i class="fa-solid fa-folder" style="color: rgb(76, 147, 80);"></i>
+                    </div>
+                    <div class="contentinfostuff">
+                        <h3>File No.</h3>
+                        <p>FCDA/ES/ICT/0001</p> <br>
+
+                        <h3>Subject</h3>
+                        <p>ICT In correspondent with Procurement</p> <br>
+
+                        <h3>Origin department</h3>
+                        <p>ICT department</p>
+                    </div>
+                </div>
+
+                <div class="contentinfo2">
+                    <div class="contentinfostuff">
+                        <h3>Date created</h3>
+                        <p>17/06/2026</p> <br>
+
+                        <h3>Current Location</h3>
+                        <p>Procurement</p> <br>
+
+                        <h3>Status</h3>
+                        <p>In Progress</p><br>
+                    </div>
+                </div>
+
+                <div class="contentinfo3">
+                    <div class="contentinfostuff">
+                        <h3>Last Updated</h3>
+                        <p>17/06/2026  11:26 AM</p> <br>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="tablecontent">
+                <div class="tabletings">
+                    <p class="active1" id="actionsheet"><i class="fa-solid fa-file-circle-plus" style="color: black;"></i>Action Sheet</p>
+                    <p id="mhistory"><i class="fa-solid fa-truck-fast" style="color: black;"></i>Movement History</p>
+                    <p id="maildets"><i class="fa-solid fa-envelope" style="color: black;"></i>Mail Details</p>
+                </div>
+                <div class="newtable1" id="newtable1">
+                    <div class="title0">
+                        <p>Action Sheet</p>
+                        <!-- <button>Add Action</button> -->
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>S/N</td>
+                                <td>Date & Time</td>
+                                <td>Folio</td>
+                                <td>Action By</td>
+                                <td>Department</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>03/05/2026 11:15 AM</td>
+                                <td>12</td>
+                                <td>Head ICT</td>
+                                <td>ICT</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>03/05/2026 10:15 AM</td>
+                                <td>6</td>
+                                <td>DG Mass</td>
+                                <td>Mass Housing</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>03/05/2026 09:55 AM</td>
+                                <td>5</td>
+                                <td>DG</td>
+                                <td>engineering</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>03/05/2026 08:15 AM</td>
+                                <td>54</td>
+                                <td>Head Prc</td>
+                                <td>Procurement</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="newtable2" id="newtable2">
+                    <div class="title1">
+                    <p>Movement History</p>
+                    </div>
+                    <table class="movementend" id="movementend">
+                        <thead>
+                            <tr>
+                                <td>S/N</td>
+                                <td>Date & Time</td>
+                                <td>From</td>
+                                <td>To</td>
+                                <td>Action By</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>03/05/2026 11:15 AM</td>
+                                <td>ICT</td>
+                                <td>Procurement</td>
+                                <td>John doe</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>03/05/2026 10:15 AM</td>
+                                <td>Procurement</td>
+                                <td>HRM</td>
+                                <td>Dele Momodu</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>03/05/2026 09:55 AM</td>
+                                <td>HRM</td>
+                                <td>CPO</td>
+                                <td>osinachi</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>03/05/2026 08:15 AM</td>
+                                <td>CPO</td>
+                                <td>ICT</td>
+                                <td>guy</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="newtable3" id="newtable3">
+                    <div class="title1">
+                        <p>Mails Attached to the File</p>
+                    </div>
+                    <table class="movementend" id="movementend">
+                        <thead>
+                            <tr>
+                                <td>S/N</td>
+                                <td>Mail Ref.</td>
+                                <td>Subject</td>
+                                <td>Date Added</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>MAIL/2004/0081</td>
+                                <td>Request for Network Upgrade</td>
+                                <td>17/06/2026</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>MAIL/2004/0081</td>
+                                <td>Request for Network Upgrade</td>
+                                <td>17/06/2026</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>MAIL/2004/0081</td>
+                                <td>Request for Network Upgrade</td>
+                                <td>17/06/2026</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>MAIL/2004/0081</td>
+                                <td>Request for Network Upgrade</td>
+                                <td>17/06/2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="entries">
+                    <p>Showing 1 to 5 of 190 entries</p>
+                    <div class="tableno">
+                        <span class="no  active">1</span>
+                        <span class="no">2</span>
+                        <button class="Next">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

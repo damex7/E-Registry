@@ -1,0 +1,382 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    /* height: 100vh; */
+}
+
+.left{
+    width: 300px;
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    font-size: 16px;
+}
+
+.right{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+
+.navbar .navcontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    /* padding: 20px; */
+}
+
+.userinfodd{
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.userinfo{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.userinfo img{
+    width: 30px;
+    height: 30px;
+}
+
+.title{
+    margin-top: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.content ul li{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.content ul li a{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.content ul li a:hover,.content ul li a.active{
+    /* color: #f2d4a2; */
+    background-color:rgb(54, 91, 54);
+    padding: 10px;
+    width: 180px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.contentinfo1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color: yellow; */
+}
+
+.contentinfo2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color: red; */
+    width: 30%;
+}
+
+.contentinfo3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color: blue; */
+    width: 30%;
+}
+
+.contentinfo1 i{
+    font-size: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(195, 227, 195);
+}
+
+.contentinfostuff{
+    display: flex;
+    flex-direction: column;
+}
+
+.filecontent{
+    justify-content: space-between;
+    /* padding: 20px; */
+    border: 1px solid #ddd;
+    display: flex;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* background-color: aqua; */
+    font-size: 14px;
+}
+
+.contentinfostuff button{
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.contentinfostuff button:hover{
+    background-color: rgb(117, 159, 117);
+    color: white;
+}
+
+.departmentfiles{
+    overflow-x: scroll;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size: 14px;
+    /* height: 70vh; */
+    /* table-layout:fixed; */
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
+    vertical-align:top;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+    font-size:14px;
+}
+
+th{
+    background:#b6b5b5;
+    font-weight:600;
+}
+
+tbody tr:hover{
+    background:#fafafa;
+}
+
+.tabletings{
+    display: flex;
+    border: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 5px;
+}
+
+.tabletings p{
+    display: flex;
+    gap: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tablecontent{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabletings p.active1{
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+/* .tabletings p.active{
+    color: rgb(76, 147, 80);
+} */
+
+.title0{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.title1{
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.title0 button{
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.title0 button:hover{
+    background-color: rgb(117, 159, 117);
+    color: white;
+}
+
+.entries{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+}
+
+.tableno{
+    display: flex;
+    gap: 10px;
+}
+
+.view{
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.view:hover{
+    background-color: blue;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tableno .no{
+    /* background-color: blue; */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid rgb(193, 190, 190); */
+}
+
+.tableno .active{
+    background-color: green;
+    color: white;
+}
+
+.Next{
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Next:hover{
+    background-color: rgb(117, 159, 117);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recentmails{
+    overflow-x: scroll;
+}
+
+.bars{
+    display: none;
+    font-size: 20px;
+}
+
+.cancel{
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    top: 5px;
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.newtable2{
+    display: none;
+    overflow-x: scroll;
+}
+.newtable3{
+    display: none;
+}
+
+
+@media screen and (max-width: 980px){
+    .left{
+        display: none;
+        position: absolute;
+        height: 100vh;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .cancel{
+        display: block;
+    }
+}

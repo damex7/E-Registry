@@ -1,4 +1,4 @@
-@import url(sidebar.css);
+@import url("sidebar.css");
 
 *{
     box-sizing: border-box;
@@ -20,10 +20,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     /* flex-wrap: wrap; */
     gap: 20px;
 }
+
 
 .navbar .navcontent{
     display: flex;
@@ -56,7 +56,7 @@
     height: 30px;
 }
 
-.newfile{
+.newMail{
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@
     display: none;
 }
 
-.newfile form{
+.newMail form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +158,7 @@ input,.searchbar{
     cursor: pointer;
 }
 
-.addfile{
+.addMail{
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -168,7 +168,7 @@ input,.searchbar{
     cursor: pointer;
 }
 
-.addfile:hover{
+.addMail:hover{
     background-color: rgb(96, 221, 96);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 
@@ -181,7 +181,7 @@ input,.searchbar{
     /* width: 50%; */
 }
 
-.departmentfiles{
+.departmentmails{
     overflow-x: scroll;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
@@ -217,6 +217,7 @@ tbody tr:hover{
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    border: 1px solid #ddd;
 }
 
 .tableno{
@@ -231,11 +232,6 @@ tbody tr:hover{
     border: none;
     padding: 10px;
     border-radius: 5px;
-}
-
-.view a{
-    color: white;
-    text-decoration: none;
 }
 
 .view:hover{
@@ -255,13 +251,6 @@ tbody tr:hover{
 .tableno .active{
     background-color: green;
     color: white;
-}
-
-.entries{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #ddd;
 }
 
 .Next{
@@ -304,7 +293,7 @@ tbody tr:hover{
     display: none !important;
 }
 
-.cancel1{
+.cancel2{
     /* display: flex; */
     position: absolute;
     top: 20px;

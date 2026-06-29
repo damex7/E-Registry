@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="adminfilespage.css">
+    <link rel="stylesheet" href="adminmailspage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Files</title>
+    <title>Department Mails</title>
 </head>
 <body>
     <div class="container">
@@ -18,10 +18,10 @@
             <div class="content">
                 <ul>
                     <li ><a href="admindashboard.html"><i class="fa-solid fa-sliders"></i>Dashboard</a></li>
-                    <li><a class="active" href="adminfilespage.html"><i class="fa-regular fa-folder-open"></i>Files</a></li>
-                    <li><a href="adminmailspage.html"><i class="fa-solid fa-envelope"></i> Mails</a></li>
+                    <li><a href="adminfilespage.html"><i class="fa-regular fa-folder-open"></i>Files</a></li>
+                    <li><a class="active" href="adminmailspage.html"><i class="fa-solid fa-envelope"></i> Mails</a></li>
                     <li><a href="adminUserspage.html"><i class="fa-solid fa-user"></i>Users</a></li>
-                    <li><a href="admindepartmentspage.html"><i class="fa-solid fa-building" style="color: white;"></i>Departments</a></li>
+                    <li><a href="departments.html"><i class="fa-solid fa-building" style="color: white;"></i>Departments</a></li>
                     <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
             <div class="navbar">
                 <nav class="navcontent">
                     <div class="name">
-                        <h1>Files</h1>
+                        <h1>Mails</h1>
                     </div>
 
                     <div class="userinfodd">
@@ -61,20 +61,20 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
 
-            <div class="newfile" id="newFile">
+            <div class="newMail" id="newMail">
                 <form action="#" method="post">
                     <div class="title10">
-                        <h3>New File</h3>
+                        <h3>New Mail</h3>
                     </div>
 
-                    <div class="cancel1" id="cancel1">
+                    <div class="cancel2" id="cancel2">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
 
                     <div class="formcontent">
                         <div class="forminfo">
-                            <label for="Name">Name</label>
-                            <input type="text" name="Name" id="filename">
+                            <label for="RefNo">Ref No</label>
+                            <input type="text" name="RefNo" id="RefNo">
                         </div>
 
                         <div class="forminfo">
@@ -83,13 +83,8 @@
                         </div>
 
                         <div class="forminfo">
-                            <label for="FileNo">File No</label>
-                            <input type="text" name="FileNo" id="FileNo">
-                        </div>
-
-                         <div class="forminfo">
-                            <label for="Volume">Volume</label>
-                            <input type="text" name="Volume" id="Volume">
+                            <label for="Sender">Sender</label>
+                            <input type="text" name="Sender" id="Sender">
                         </div>
 
                         <div class="forminfo">
@@ -105,22 +100,21 @@
             </div>
 
             <div class="search">
-                <input type="text" name="#" id="searchbar" class="searchbar" placeholder="Search by filing No or Subject...">
+                <input type="text" name="#" id="searchbar" class="searchbar" placeholder="Search by Subject, Sender or Ref No...">
                 <!-- <select name="statusdd" id="statusdd" class="statusdd">
                     <option value="#">All Status</option>
                     <option value="1">Pending</option>
-                    <option value="2">Active</option>
-                    <option value="3">Completed</option>
+                    <option value="2">Received</option>
                 </select>
                 <select name="typedd" id="typedd" class="typedd">
                     <option value="#">All Types</option>
                     <option value="1">Incoming</option>
                     <option value="2">Outgoing</option>
                 </select>
-                <button class="addfile" id="addFile">Add File</button> -->
+                <button class="addMail" id="addMail">Register Mail</button> -->
             </div>
 
-            <div class="departmentfiles">
+            <div class="departmentmails">
                 <table>
                     <thead>
                         <!-- <tr>
@@ -132,54 +126,60 @@
                             <td><a href="#">View All</a></td>
                         </tr> -->
                         <tr>
-                            <td>File No</td>
-                            <td>Volume</td>
-                            <td>Department</td>
+                            <td>Ref No</td>
                             <td>Subject</td>
+                            <td>From</td>
+                            <td>to</td>
                             <td>Type</td>
+                            <td>Status</td>
                             <td>Action</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>FCDA/2026/0001</td>
-                            <td>Vol1</td>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
                             <td>Legal</td>
-                            <td>Land Allocation Dispute</td>
-                            <td>Policy</td>
-                            <td><button class="view"><a href="adminfiledetailspage.html">view</a></button></td>
+                            <td>ICT</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
                         </tr>
                         <tr>
-                            <td>FCDA/2026/0001</td>
-                            <td>Vol1</td>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
                             <td>Legal</td>
-                            <td>Land Allocation Dispute</td>
-                            <td>Policy</td>
-                            <td><button class="view"><a href="adminfiledetailspage.html">view</a></button></td>
+                            <td>ICT</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
                         </tr>
                         <tr>
-                            <td>FCDA/2026/0001</td>
-                            <td>Vol1</td>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
                             <td>Legal</td>
-                            <td>Land Allocation Dispute</td>
-                            <td>Policy</td>
-                            <td><button class="view"><a href="adminfiledetailspage.html">view</a></button></td>
+                            <td>ICT</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
                         </tr>
                         <tr>
-                            <td>FCDA/2026/0001</td>
-                            <td>Vol1</td>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
                             <td>Legal</td>
-                            <td>Land Allocation Dispute</td>
-                            <td>Policy</td>
-                            <td><button class="view"><a href="adminfiledetailspage.html">view</a></button></td>
+                            <td>ICT</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
                         </tr>
                         <tr>
-                            <td>FCDA/2026/0001</td>
-                            <td>Vol1</td>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
                             <td>Legal</td>
-                            <td>Land Allocation Dispute</td>
-                            <td>Policy</td>
-                            <td><button class="view"><a href="adminfiledetailspage.html">view</a></button></td>
+                            <td>ICT</td>
+                            <td>Incoming</td>
+                            <td>Pending</td>
+                            <td><button class="view">view</button></td>
                         </tr>
                         
                     </tbody>
