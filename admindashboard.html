@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="admindashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Dashboard</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
@@ -18,10 +18,10 @@
             <div class="content">
                 <ul>
                     <li ><a class="active" href="index.html"><i class="fa-solid fa-sliders"></i>Dashboard</a></li>
-                    <li><a href="mydepartmentfiles.html"><i class="fa-regular fa-folder-open"></i>Department Files</a></li>
-                    <li><a href="mydepartmentmails.html"><i class="fa-solid fa-envelope"></i>Department Mails</a></li>
-                    <li><a href="pendingaction.html"><i class="fa-solid fa-hourglass-half"></i>Pending Action</a></li>
-                    <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li><a href="mydepartmentfiles.html"><i class="fa-regular fa-folder-open"></i>Files</a></li>
+                    <li><a href="mydepartmentmails.html"><i class="fa-solid fa-envelope"></i> Mails</a></li>
+                    <li><a href="profile.html"><i class="fa-solid fa-user"></i>Users</a></li>
+                    <li><a href="departments.html"><i class="fa-solid fa-user"></i>Departments</a></li>
                     <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
             <div class="navbar">
                 <nav class="navcontent">
                     <div class="name">
-                        <h1>Dashboard</h1>
+                        <h1>Admin Dashboard</h1>
                     </div>
 
                     <div class="userinfodd">
@@ -63,23 +63,28 @@
 
             <div class="lilboxes">
                 <div class="boxcontent">
-                    <p>Files in Department</p>
-                    <p>120</p>
+                    <p>Total Files</p>
+                    <p>9120</p>
+                </div>
+
+                <div class="boxcontent">
+                    <p>Total Mails</p>
+                    <p>11035</p>
+                </div>
+
+                <div class="boxcontent">
+                    <p>Total Users</p>
+                    <p>1160</p>
+                </div>
+
+                <div class="boxcontent">
+                    <p>Total departments</p>
+                    <p>25</p>
                 </div>
 
                 <div class="boxcontent">
                     <p>Pending Actions</p>
-                    <p>35</p>
-                </div>
-
-                <div class="boxcontent">
-                    <p>Mails</p>
-                    <p>60</p>
-                </div>
-
-                <div class="boxcontent">
-                    <p>Files Awaiting Review</p>
-                    <p>25</p>
+                    <p>125</p>
                 </div>
             </div>
 
@@ -87,7 +92,9 @@
                 <table>
                     <thead>
                         <tr>
-                            <td>Recent files</td>
+                            <td>Recent Files</td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td><a href="mydepartmentfiles.html">View All</a></td>
@@ -95,98 +102,130 @@
                         <tr>
                             <td>File No</td>
                             <td>Subject</td>
+                            <td>Department</td>
+                            <td>Current Location</td>
                             <td>Status</td>
-                            <td>Date Received</td>
+                            <td>Date Created</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>FCDA/2026/0007</td>
                             <td>Land Allocation Dispute</td>
-                            <td>Active</td>
+                            <td>Legal</td>
+                            <td>HRM</td>
+                            <td>Reviewed</td>
                             <td>20/06/2026</td>
                         </tr>
                         <tr>
                             <td>FCDA/2026/0007</td>
                             <td>Land Allocation Dispute</td>
-                            <td>Active</td>
+                            <td>Legal</td>
+                            <td>HRM</td>
+                            <td>Reviewed</td>
                             <td>20/06/2026</td>
                         </tr>
                         <tr>
                             <td>FCDA/2026/0007</td>
                             <td>Land Allocation Dispute</td>
-                            <td>Active</td>
+                            <td>Legal</td>
+                            <td>HRM</td>
+                            <td>Reviewed</td>
                             <td>20/06/2026</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <table>
+                <div class="Quickaction">
+                    <h4 class="titleqa">Quick Action</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-user-plus" style="color: rgb(76, 147, 80);"></i>Add New User</a></li>
+                        <li><a href="#"><i class="fa-solid fa-building" style="color: rgb(76, 145, 147);"></i>Create Department</a></li>
+                        <li><a href="#"><i class="fa-regular fa-folder-open" style="color: yellow;"></i>View All Files</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope" style="color: orangered;"></i>View All Mails</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="recentmails">
+                <table class="recentmailst">
                     <thead>
-                        <tr>
-                            <td>My Pending Action</td>
+                        <tr class="topend">
+                            <td>Recent Mails</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td><a href="pendingaction.html">View All</a></td>
                         </tr>
                         <tr>
-                            <td>File No</td>
+                            <td>Mail No</td>
                             <td>Subject</td>
+                            <td>From</td>
+                            <td>To</td>
+                            <td>Type</td>
                             <td>Status</td>
-                            <td>Due Date</td>
+                            <td>Date Received</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>FCDA/2026/0007</td>
+                            <td>MAIL/2004/0081</td>
                             <td>Land Allocation Dispute</td>
-                            <td>Active</td>
+                            <td>Legal</td>
+                            <td>HRM</td>
+                            <td>incoming</td>
+                            <td>Received</td>
                             <td>20/06/2026</td>
                         </tr>
                         <tr>
-                            <td>FCDA/2026/0007</td>
+                            <td>MAIL/2004/0081</td>
                             <td>Land Allocation Dispute</td>
-                            <td>Active</td>
+                            <td>Legal</td>
+                            <td>HRM</td>
+                            <td>incoming</td>
+                            <td>Received</td>
                             <td>20/06/2026</td>
                         </tr>
                         <tr>
-                            <td>FCDA/2026/0007</td>
+                            <td>MAIL/2004/0081</td>
                             <td>Land Allocation Dispute</td>
-                            <td>Active</td>
+                            <td>Legal</td>
+                            <td>HRM</td>
+                            <td>incoming</td>
+                            <td>Received</td>
                             <td>20/06/2026</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
 
-            <div class="recentmails">
-                <table>
+                <table class="departmentoverview">
                     <thead>
-                        <tr>
-                            <td>My Recent Mails</td>
+                        <tr class="topend">
+                            <td>Departmental Overview</td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td><a href="mydepartmentmails.html">View All</a></td>
+                            <td><a href="">View All</a></td>
                         </tr>
+
                         <tr>
-                            <td>Ref No</td>
-                            <td>Subject</td>
-                            <td>From</td>
-                            <td>Date Received</td>
-                            <td>Priority</td>
-                            <td>Action</td>
+                            <td>Department</td>
+                            <td>files</td>
+                            <td>pending</td>
+                            <td>mails</td>
+                            <td>users</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>MAIL/2026/0001</td>
-                            <td>Land Dispute</td>
-                            <td>HR</td>
-                            <td>20/06/2026</td>
-                            <td>High</td>
-                            <td><button class="view">view</button></td>
+                            <td>Legal</td>
+                            <td>1198</td>
+                            <td>20</td>
+                            <td>2000</td>
+                            <td>100</td>
                         </tr>
                     </tbody>
                 </table>
