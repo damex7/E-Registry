@@ -102,6 +102,25 @@ if(actionsheet && mhistory && maildets){
     })
 }
 
+///////////////////////////////////
+// Forward File ////////////////////////////////
+let cancel4 = document.getElementById("cancel4");
+let fFile = document.getElementById("fFile");
+let Fbtn = document.getElementById("Fbtn");
+
+console.log("Script reached Add Mail section");
+
+if(cancel4 && fFile){
+    cancel4.addEventListener('click', ()=>{
+        fFile.classList.add("hide");
+    });
+
+    Fbtn.addEventListener('click', ()=>{
+        fFile.classList.remove("hide");
+        fFile.classList.add("show");
+    })
+}
+////////////////////////////////////////
 
 const img = document.getElementById("profileImg"),
 imgUpload = document.getElementById("imgUpload");

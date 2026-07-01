@@ -159,6 +159,66 @@
     flex-direction: column;
 }
 
+.actionbtn a{
+    text-decoration: none;
+    color: white;
+}
+
+.forwardfile{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+    top: 200px;
+    position: absolute;
+    background-color: white;
+    display: none;
+}
+
+.forwardfile form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+.forwardfile form input{
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.forwardfile form select{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.submit{
+    align-self: center;
+}
+
+.submit button{
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.submit button:hover{
+    background-color: rgb(37, 184, 37);
+}
+
 .filecontent{
     justify-content: space-between;
     /* padding: 20px; */
@@ -276,6 +336,11 @@ tbody tr:hover{
     color: white;
 }
 
+.title11{
+    display: flex;
+    justify-content: space-between;
+}
+
 .entries{
     padding: 20px;
     display: flex;
@@ -346,6 +411,10 @@ tbody tr:hover{
     font-size: 20px;
     top: 5px;
     display: none;
+}
+
+.cancel4{
+    cursor: pointer;
 }
 
 .show{
