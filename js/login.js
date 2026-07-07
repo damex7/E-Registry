@@ -39,7 +39,7 @@ loginForm.addEventListener("submit", function (event) {
                 break;
 
             case "department":
-                window.location.href = "user/userdashboard.html.html";
+                window.location.href = "user/userdashboard.html";
                 break;
 
             case "hod":

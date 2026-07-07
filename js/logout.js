@@ -1,22 +1,13 @@
-const logoutLink = document.getElementById("logoutLink");
+document.querySelectorAll(".logout-link").forEach(link => {
 
-if (logoutLink) {
+    link.addEventListener("click", function (e) {
 
-    logoutLink.addEventListener("click", function (event) {
+        e.preventDefault();
 
-        // Prevent the link from navigating
-        event.preventDefault();
+        logout();
 
-        const confirmLogout = confirm("Are you sure you want to logout?");
-
-        if (confirmLogout) {
-
-            logout();
-
-            window.location.href = "index.html";
-
-        }
+        window.location.href = "index.html";
 
     });
 
-}
+});
