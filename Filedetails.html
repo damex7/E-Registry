@@ -106,7 +106,7 @@
             <div class="forwardfile" id="fFile">
                 <form action="">
                     <div class="title11">
-                        <h3>New File</h3>
+                        <h3>Forward File</h3>
 
                         <div class="cancel4" id="cancel4">
                             <i class="fa-solid fa-xmark"></i>
@@ -140,7 +140,27 @@
 
             <div class="addAction" id="addAction">
                 <form action="#">
-                    
+                    <div class="title11">
+                        <h3>Add Action</h3>
+
+                        <div class="cancel4" id="cancel5">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                 
+                    <label for="Folio"> Folio </label>
+                    <input type="number">
+
+                    <label for="Actionby"> Action by </label>
+                    <select name="Actionby" id="Actionby">
+                        <option value="">Action by</option>
+                        <option value="1">HOD</option>
+                        <option value="2">DIR</option>
+                    </select>
+
+                    <div class="submit">
+                        <button type="submit">submit</button>
+                    </div>
                 </form>
             </div>
            
@@ -153,7 +173,7 @@
                 <div class="newtable1" id="newtable1">
                     <div class="title0">
                         <p>Action Sheet</p>
-                        <button class="actionbtn"><a href="">Add Action</a></button>
+                        <button class="actionbtn" id="addbtn">Add Action</button>
                     </div>
                     <table>
                         <thead>

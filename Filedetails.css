@@ -246,6 +246,44 @@
     color: white;
 }
 
+.addAction{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+    top: 200px;
+    position: absolute;
+    background-color: white;
+    display: none;
+}
+
+.addAction form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+.addAction form input{
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.addAction form select{
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
 .departmentfiles{
     overflow-x: scroll;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
@@ -298,9 +336,22 @@ tbody tr:hover{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
-.tabletings p.active1{
+/* .tabletings p.active1{
     color: green;
     border-bottom: 2px solid green;
+} */
+
+.tabletings p{
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.tabletings p.active1{
+    color: green;
+    border-bottom: 3px solid green;
+    font-weight: bold;
+    background: #f5fff5;
 }
 
 /* .tabletings p.active{

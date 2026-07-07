@@ -75,6 +75,10 @@ if(actionsheet && mhistory && maildets){
             newtable1.style.display = "block";
             newtable2.style.display = "none";
             newtable3.style.display = "none";
+
+            actionsheet.classList.add("active1");
+            maildets.classList.remove("active1");
+            mhistory.classList.remove("active1");
         }
         else{
             newtable1.style.display = "block";
@@ -86,6 +90,10 @@ if(actionsheet && mhistory && maildets){
             newtable1.style.display = "none";
             newtable2.style.display = "block";
             newtable3.style.display = "none";
+
+            actionsheet.classList.remove("active1");
+            maildets.classList.remove("active1");
+            mhistory.classList.add("active1");
         }
         // else{
         //     newtable3.style.display = "none";
@@ -98,6 +106,9 @@ if(actionsheet && mhistory && maildets){
             newtable2.style.display = "none";
             newtable3.style.display = "block";
 
+            actionsheet.classList.remove("active1");
+            maildets.classList.add("active1");
+            mhistory.classList.remove("active1");
         }
     })
 }
@@ -118,6 +129,26 @@ if(cancel4 && fFile){
     Fbtn.addEventListener('click', ()=>{
         fFile.classList.remove("hide");
         fFile.classList.add("show");
+    })
+}
+////////////////////////////////////////
+
+///////////////////////////////////
+// Add Action ////////////////////////////////
+let cancel5 = document.getElementById("cancel5");
+let Addaction = document.getElementById("addAction");
+let addbtn = document.getElementById("addbtn");
+
+console.log("Script reached Add Mail section");
+
+if(cancel5 && Addaction){
+    cancel5.addEventListener('click', ()=>{
+        Addaction.classList.add("hide");
+    });
+
+    addbtn.addEventListener('click', ()=>{
+        Addaction.classList.remove("hide");
+        Addaction.classList.add("show");
     })
 }
 ////////////////////////////////////////
