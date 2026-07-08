@@ -21,3 +21,17 @@ function login(username, password){
     return null;
 
 }
+
+function getCurrentUser() {
+
+    return JSON.parse(
+        sessionStorage.getItem("currentUser")
+    );
+
+}
+
+function logout() {
+
+    sessionStorage.removeItem("currentUser");
+
+}

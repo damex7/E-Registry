@@ -10,7 +10,7 @@ const users = [
 
     {
         id:2,
-        username:"ict001",
+        username:"ajanaku.ogunmola@fcda.gov.ng",
         password:"123456",
         role:"department",
         department:"ICT",

@@ -6,7 +6,7 @@ document.querySelectorAll(".logout-link").forEach(link => {
 
         logout();
 
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
 
     });
 
