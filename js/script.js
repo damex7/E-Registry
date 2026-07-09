@@ -58,6 +58,26 @@ if(cancel2 && newMail && addMail){
 
 }
 
+// View Mail ///////////////////////////////////////
+let cancel7 = document.getElementById("cancel7");
+let viewmail = document.getElementById("viewmail");
+let vmbtn = document.querySelector(".viewmailbtn");
+
+console.log("Script reached Add Mail section");
+
+if(cancel7 && viewmail && vmbtn){
+
+    cancel7.addEventListener('click', ()=>{
+        viewmail.classList.add("hide");
+    });
+
+    vmbtn.addEventListener('click', ()=>{
+        viewmail.classList.remove("hide");
+        viewmail.classList.add("show");
+    });
+
+}
+
 //////////////////////////////////////////////////
 // file detail
 let actionsheet = document.getElementById("actionsheet");

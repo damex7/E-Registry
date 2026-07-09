@@ -83,13 +83,56 @@
                         </div>
 
                         <div class="forminfo">
-                            <label for="Sender">Sender</label>
-                            <input type="text" name="Sender" id="Sender">
+                            <label for="Type">Type</label>
+                            <select name="type" id="type">
+                                <option value="">Type</option>
+                                <option value="1">Incoming</option>
+                                <option value="2">Outgoing</option>
+                            </select>
+                        </div>
+
+                        <div class="forminfo">
+                            <label for="From">From</label>
+                            <select name="" id="">
+                                <option value="">Select Department</option>
+                                <option value="1">Engineering Design and Evaluation</option>
+                                <option value="2">Procurement</option>
+                                <option value="3">Urban and Regional Planning</option>
+                                <option value="4">Satelite Towns Infrastructure</option>
+                                <option value="5">Public Building</option>
+                                <option value="6">Finance and Administration</option>
+                                <option value="7">Resettlement and Compenation</option>
+                                <option value="8">Mass Housing</option>
+                                <option value="9">Engineering</option>
+                                <option value="10">Surveying and Mapping</option>
+                            </select>
+                        </div>
+
+                        <div class="forminfo">
+                            <label for="To">To</label>
+                            <select name="" id="">
+                                <option value="">Select Department</option>
+                                <option value="1">Engineering Design and Evaluation</option>
+                                <option value="2">Procurement</option>
+                                <option value="3">Urban and Regional Planning</option>
+                                <option value="4">Satelite Towns Infrastructure</option>
+                                <option value="5">Public Building</option>
+                                <option value="6">Finance and Administration</option>
+                                <option value="7">Resettlement and Compenation</option>
+                                <option value="8">Mass Housing</option>
+                                <option value="9">Engineering</option>
+                                <option value="10">Surveying and Mapping</option>
+                            </select>
                         </div>
 
                         <div class="forminfo">
                             <label for="Date">Date</label>
                             <input type="date" name="Date" id="Date">
+                        </div>
+
+                        <div class="forminfo">
+                            <label for="FileNo">File No:</label>
+                            <input type="text" name="FileNo" id="FileNo">
                         </div>
                     </div>
 
@@ -99,11 +142,48 @@
                 </form>
             </div>
 
+            <div class="viewmail" id="viewmail">
+                <div class="title18">
+                    <h3>Mail Details</h3>
+                </div>
+
+                <div class="cancel7" id="cancel7">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                
+                <div class="viewmaildets">
+                    <div class="dets">
+                        <h4>Ref no:</h4>
+                        <p>MAIL/2004/0081</p>
+                    </div>
+                    
+                    <div class="dets">
+                        <h4>Subject:</h4>
+                        <p>Request for Legal Clarifcarion</p>
+                    </div>
+
+                    <div class="dets">
+                        <h4>To:</h4>
+                        <p>Legal</p>
+                    </div>
+
+                    <div class="dets">
+                        <h4>Type:</h4>
+                        <p>Outgoing</p>
+                    </div>
+
+                    <div class="dets">
+                        <h4>File No:</h4>
+                        <p>FCDA/ICT/2123</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="search">
                 <input type="text" name="#" id="searchbar" class="searchbar" placeholder="Search by Subject, Sender or Ref No...">
                 <select name="statusdd" id="statusdd" class="statusdd">
                     <option value="#">All Status</option>
-                    <option value="1">Pending</option>
+                    <option value="1">Sent</option>
                     <option value="2">Received</option>
                 </select>
                 <select name="typedd" id="typedd" class="typedd">
@@ -117,18 +197,11 @@
             <div class="departmentmails">
                 <table>
                     <thead>
-                        <!-- <tr>
-                            <td>My Pending Action</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="#">View All</a></td>
-                        </tr> -->
                         <tr>
                             <td>Ref No</td>
                             <td>Subject</td>
                             <td>From</td>
+                            <td>To</td>
                             <td>Type</td>
                             <td>Status</td>
                             <td>Action</td>
@@ -138,42 +211,47 @@
                         <tr>
                             <td>MAIL/2004/0081</td>
                             <td>Request for Legal Clarifcarion</td>
+                            <td>ICT</td>
                             <td>Legal</td>
+                            <td>Outgoing</td>
+                            <td>Sent</td>
+                            <td><button class="view viewmailbtn" id="viewmailbtn">view</button></td>
+                        </tr>
+                        <tr>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
+                            <td>Procurement</td>
+                            <td>ICT</td>
                             <td>Incoming</td>
-                            <td>Pending</td>
-                            <td><button class="view">view</button></td>
+                            <td>Received</td>
+                            <td><button class="view viewmailbtn" id="viewmailbtn">view</button></td>
+                        </tr>
+                        <tr>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
+                            <td>Mass Housing</td>
+                            <td>ICT</td>
+                            <td>Incoming</td>
+                            <td>Received</td>
+                            <td><button class="view viewmailbtn" id="viewmailbtn">view</button></td>
+                        </tr>
+                        <tr>
+                            <td>MAIL/2004/0081</td>
+                            <td>Request for Legal Clarifcarion</td>
+                            <td>ICT</td>
+                            <td>DEDE</td>
+                            <td>Outgoing</td>
+                            <td>Sent</td>
+                            <td><button class="view viewmailbtn" id="viewmailbtn">view</button></td>
                         </tr>
                         <tr>
                             <td>MAIL/2004/0081</td>
                             <td>Request for Legal Clarifcarion</td>
                             <td>Legal</td>
+                            <td>ICT</td>
                             <td>Incoming</td>
-                            <td>Pending</td>
-                            <td><button class="view">view</button></td>
-                        </tr>
-                        <tr>
-                            <td>MAIL/2004/0081</td>
-                            <td>Request for Legal Clarifcarion</td>
-                            <td>Legal</td>
-                            <td>Incoming</td>
-                            <td>Pending</td>
-                            <td><button class="view">view</button></td>
-                        </tr>
-                        <tr>
-                            <td>MAIL/2004/0081</td>
-                            <td>Request for Legal Clarifcarion</td>
-                            <td>Legal</td>
-                            <td>Incoming</td>
-                            <td>Pending</td>
-                            <td><button class="view">view</button></td>
-                        </tr>
-                        <tr>
-                            <td>MAIL/2004/0081</td>
-                            <td>Request for Legal Clarifcarion</td>
-                            <td>Legal</td>
-                            <td>Incoming</td>
-                            <td>Pending</td>
-                            <td><button class="view">view</button></td>
+                            <td>Received</td>
+                            <td><button class="view viewmailbtn" id="viewmailbtn">view</button></td>
                         </tr>
                         
                     </tbody>

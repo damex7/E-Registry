@@ -63,8 +63,10 @@
     gap: 20px;
     position: absolute;
     align-self: center;
+    height: 70vh;
     width: 80%;
     top: 50px;
+    overflow-y: scroll;
     display: none;
 }
 
@@ -84,6 +86,39 @@
 .forminfo{
     display: flex;
     flex-direction: column;
+}
+
+.forminfo select{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font: 16px;
+}
+
+.viewmail{
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: 120px;
+    /* justify-self: center; */
+    align-self: center;
+    display: none;
+}
+
+.title18{
+    display: flex;
+    justify-content: center;
+}
+
+.viewmaildets{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .submitbtn{
@@ -118,6 +153,7 @@
 
 .formcontent input{
     width: 100%;
+    font: 16px;
 }
 
 .title{
@@ -295,6 +331,13 @@ tbody tr:hover{
 
 .cancel2{
     /* display: flex; */
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.cancel7{
     position: absolute;
     top: 20px;
     right: 25px;

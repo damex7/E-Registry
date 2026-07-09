@@ -72,10 +72,10 @@
                     </div>
 
                     <div class="formcontent">
-                        <div class="forminfo">
+                        <!-- <div class="forminfo">
                             <label for="Name">Name</label>
                             <input type="text" name="Name" id="filename">
-                        </div>
+                        </div> -->
 
                         <div class="forminfo">
                             <label for="Subject">Subject</label>
@@ -87,9 +87,25 @@
                             <input type="text" name="FileNo" id="FileNo">
                         </div>
 
-                         <div class="forminfo">
+                        <div class="forminfo">
                             <label for="Volume">Volume</label>
-                            <input type="text" name="Volume" id="Volume">
+                            <select name="Volume" id="Volume">
+                                <option value="">Select Volume</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="forminfo">
+                            <label for="Category">Category</label>
+                            <select name="Category" id="Category">
+                                <option value="">Select Category</option>
+                                <option value="1">Policy</option>
+                                <option value="2">Personal</option>
+                            </select>
                         </div>
 
                         <div class="forminfo">
@@ -106,6 +122,11 @@
 
             <div class="search">
                 <input type="text" name="#" id="searchbar" class="searchbar" placeholder="Search by filing No or Subject...">
+                <select name="categorydd" id="categorydd" class="categorydd">
+                    <option value="#">All Categories</option>
+                    <option value="1">Policy</option>
+                    <option value="2">Personal</option>
+                </select>
                 <select name="statusdd" id="statusdd" class="statusdd">
                     <option value="#">All Status</option>
                     <option value="1">Pending</option>
@@ -123,19 +144,13 @@
             <div class="departmentfiles">
                 <table>
                     <thead>
-                        <!-- <tr>
-                            <td>My Pending Action</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="#">View All</a></td>
-                        </tr> -->
                         <tr>
                             <td>File No</td>
                             <td>Date Received</td>
                             <td>From</td>
+                            <td>To</td>
                             <td>Subject</td>
+                            <td>Category</td>
                             <td>Type</td>
                             <td>Status</td>
                             <td>Action</td>
@@ -146,7 +161,9 @@
                             <td>FCDA/2026/0001</td>
                             <td>03/05/2026</td>
                             <td>Legal</td>
+                            <td>ICT</td>
                             <td>Land dispute</td>
+                            <td>Policy</td>
                             <td>Incoming</td>
                             <td>Pending</td>
                             <td><button class="view"><a href="Filedetails.html">view</a></button></td>
@@ -155,7 +172,9 @@
                             <td>FCDA/2026/0001</td>
                             <td>03/05/2026</td>
                             <td>Legal</td>
+                            <td>ICT</td>
                             <td>Land dispute</td>
+                            <td>Policy</td>
                             <td>Incoming</td>
                             <td>Pending</td>
                             <td><button class="view"><a href="Filedetails.html">view</a></button></td>
@@ -164,7 +183,9 @@
                             <td>FCDA/2026/0001</td>
                             <td>03/05/2026</td>
                             <td>Legal</td>
+                            <td>ICT</td>
                             <td>Land dispute</td>
+                            <td>Policy</td>
                             <td>Incoming</td>
                             <td>Pending</td>
                             <td><button class="view"><a href="Filedetails.html">view</a></button></td>
@@ -173,7 +194,9 @@
                             <td>FCDA/2026/0001</td>
                             <td>03/05/2026</td>
                             <td>Legal</td>
+                            <td>ICT</td>
                             <td>Land dispute</td>
+                            <td>Policy</td>
                             <td>Incoming</td>
                             <td>Pending</td>
                             <td><button class="view"><a href="Filedetails.html">view</a></button></td>
@@ -182,7 +205,9 @@
                             <td>FCDA/2026/0001</td>
                             <td>03/05/2026</td>
                             <td>Legal</td>
+                            <td>ICT</td>
                             <td>Land dispute</td>
+                            <td>Policy</td>
                             <td>Incoming</td>
                             <td>Pending</td>
                             <td><button class="view"><a href="Filedetails.html">view</a></button></td>

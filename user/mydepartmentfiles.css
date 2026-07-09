@@ -120,6 +120,14 @@
     width: 100%;
 }
 
+.formcontent select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
 .title{
     margin-top: 20px;
 }
@@ -128,7 +136,7 @@
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
-    gap: 9px;
+    gap: 11px;
 }
 
 input,.searchbar{
@@ -137,7 +145,7 @@ input,.searchbar{
     outline: none;
     border: 1px solid rgb(214, 214, 214);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    width: 56%;
 }
 
 .statusdd{
@@ -150,6 +158,15 @@ input,.searchbar{
 }
 
 .typedd{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(214, 214, 214);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.categorydd{
     padding: 10px;
     border-radius: 5px;
     outline: none;

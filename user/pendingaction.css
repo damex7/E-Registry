@@ -72,7 +72,7 @@ input,.searchbar{
     outline: none;
     border: 1px solid rgb(214, 214, 214);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-    width: 77%;
+    width: 100%;
 }
 
 .statusdd{
@@ -152,6 +152,11 @@ tbody tr:hover{
     border: none;
     padding: 10px;
     border-radius: 5px;
+}
+
+.view a{
+    text-decoration: none;
+    color: white;
 }
 
 .view:hover{
